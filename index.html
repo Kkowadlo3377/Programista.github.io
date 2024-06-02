@@ -134,46 +134,6 @@
     </div>
   </section>
 
-  <section id="gallery" class="bg-dark py-5">
-    <div class="container">
-      <h2 class="text-center text-white">Galeria</h2>
-      <p>Zbiór zdjęć i filmów prezentujących różne modele dronów w akcji oraz efekty ich zastosowań.</p>
-    </div>
-  </section>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Biblioteka do obsługi zapytań HTTP -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const gallery = document.querySelector('.gallery');
-
-        // Pobierz zdjęcia z Unsplash
-        axios.get('https://api.unsplash.com/photos/random?query=drone&count=6', {
-            headers: {
-                Authorization: 'Client-ID YOUR_ACCESS_KEY' // Zastąp YOUR_ACCESS_KEY swoim kluczem dostępowym
-            }
-        })
-        .then(response => {
-            response.data.forEach(photo => {
-                const img = document.createElement('img');
-                img.src = photo.urls.regular;
-                img.alt = photo.alt_description;
-                gallery.appendChild(img);
-            });
-        })
-        .catch(error => console.error('Błąd pobierania zdjęć z Unsplash:', error));
-
-        // Pobierz filmy z YouTube
-        axios.get('https://www.googleapis.com/youtube/v3/search?key=YOUR_API_KEY&q=drone&part=snippet&type=video&maxResults=3')
-        .then(response => {
-            response.data.items.forEach(item => {
-                const iframe = document.createElement('iframe');
-                iframe.src = `https://www.youtube.com/embed/${item.id.videoId}`;
-                iframe.allowFullscreen = true;
-                gallery.appendChild(iframe);
-            });
-        })
-        .catch(error => console.error('Błąd pobierania filmów z YouTube:', error));
-    });
-</script>
 
   <section id="contact" class="py-5">
     <div class="container">
