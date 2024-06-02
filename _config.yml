@@ -4,7 +4,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://Programista.github.io"
 
 github:
-  username: Programista # change to your github username
+  username: github_username # change to your github username
 twitter:
   username: twitter_username # change to your twitter username
 social:
@@ -15,18 +15,10 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/Programista # change to your github homepage
+    - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
-
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
-
-# Theme Settings
-theme: jekyll-theme-minimal # change to your desired theme
-
-# Optional settings for remote theme
-# remote_theme: owner/repo
-# example: remote_theme: pages-themes/minimal
