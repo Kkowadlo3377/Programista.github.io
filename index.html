@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Witaj w Świecie Dronów</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/lux/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 56px;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .card {
+      background-color: #1e272e;
+      color: white;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Drony</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +45,9 @@
     </div>
   </nav>
 
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1>Witaj w Świecie Dronów</h1>
+  <header class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-4">Witaj w Świecie Dronów</h1>
       <p class="lead">Twoje źródło informacji o najnowszych technologiach dronów</p>
     </div>
   </header>
@@ -43,14 +55,14 @@
   <section id="about" class="py-5">
     <div class="container">
       <h2 class="text-center">O Dronach</h2>
-      <p>Drony, znane również jako bezzałogowe statki powietrzne (UAV), są niezwykle wszechstronnymi urządzeniami, które znalazły zastosowanie w wielu dziedzinach, w tym w fotografii i filmowaniu lotniczym, dostawach, badaniach naukowych oraz zabawie i rekreacji.</p>
-      <p>Nowoczesne drony wyposażone są w zaawansowane technologie, takie jak GPS, kamery wysokiej rozdzielczości, czujniki zbliżenia i unikania przeszkód, które umożliwiają im wykonywanie precyzyjnych lotów i zadań.</p>
+      <p class="text-center">Drony, znane również jako bezzałogowe statki powietrzne (UAV), są niezwykle wszechstronnymi urządzeniami, które znalazły zastosowanie w wielu dziedzinach, w tym w fotografii i filmowaniu lotniczym, dostawach, badaniach naukowych oraz zabawie i rekreacji.</p>
+      <p class="text-center">Nowoczesne drony wyposażone są w zaawansowane technologie, takie jak GPS, kamery wysokiej rozdzielczości, czujniki zbliżenia i unikania przeszkód, które umożliwiają im wykonywanie precyzyjnych lotów i zadań.</p>
     </div>
   </section>
 
-  <section id="features" class="bg-light py-5">
+  <section id="features" class="bg-dark py-5">
     <div class="container">
-      <h2 class="text-center">Funkcje</h2>
+      <h2 class="text-center text-white">Funkcje</h2>
       <div class="row mt-4">
         <div class="col-md-4">
           <div class="card">
@@ -83,29 +95,8 @@
   <section id="pricing" class="py-5">
     <div class="container">
       <h2 class="text-center">Ceny</h2>
-      <p class="text-center">Ceny dronów mogą się różnić w zależności od ich funkcji, jakości kamery, zasięgu i innych czynników. Oto przybliżone ceny dronów na rynku:</p>
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Podstawowy</h5>
-              <p class="card-text">Cena: 500-1000 PLN<br>Przykład: DJI Mavic Mini</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Średni</h5>
-              <p class="card-text">Cena: 1000-3000 PLN<br>Przykład: DJI Mavic Air 2</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Zaawansowany</h5>
-              <p class="card-text">Cena: Powyżej 3000 PLN<br>Przykład: DJI Phantom 4 Pro</p>
+      <p class="text-center text-white">Ceny dronów mogą się różnić w zależności od ich funkcji, jakości kamery, zasięgu i innych czynników. Oto przybliżone ceny dronów na rynku:</p
+0 PLN<br>Przykład: DJI Phantom 4 Pro</p>
             </div>
           </div>
         </div>
@@ -113,6 +104,12 @@
     </div>
   </section>
 
-  <section id="contact" class="bg-light py-5">
+  <footer class="bg-dark text-white text-center py-3">
     <div class="container">
-      <h2 class="text-center">Skontaktuj
+      <p>&copy; 2024 Witaj w Świecie Dronów. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
