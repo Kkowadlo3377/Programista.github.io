@@ -1,124 +1,145 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Symulator Farmy 22</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-  <style>
-    /* Add some basic styling to make it look similar to Chirpy */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-   .header {
-      background-color: #333;
-      color: #fff;
-      padding: 1em;
-      text-align: center;
-    }
-   .header a {
-      color: #fff;
-      text-decoration: none;
-    }
-   .nav {
-      background-color: #333;
-      padding: 1em;
-      text-align: center;
-    }
-   .nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-    }
-   .nav li {
-      margin-right: 20px;
-    }
-   .nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-   .nav a:hover {
-      color: #ccc;
-    }
-   .search {
-      margin-left: auto;
-    }
-   .search input[type="search"] {
-      padding: 0.5em;
-      border: none;
-      border-radius: 0.5em;
-      width: 150px;
-    }
-   .search button[type="submit"] {
-      background-color: #444;
-      color: #fff;
-      border: none;
-      padding: 0.5em 1em;
-      border-radius: 0.5em;
-      cursor: pointer;
-    }
-   .search button[type="submit"]:hover {
-      background-color: #555;
-    }
-   .content {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 2em;
-    }
-   .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 1em;
-      text-align: center;
-      clear: both;
-    }
-  </style>
+  <title>Farming Simulator 22</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Symulator Farmy 22</h1>
-  </header>
-  <nav class="nav">
-    <ul>
-      <li><a href="#">Strona główna</a></li>
-      <li><a href="#">Kategorie</a></li>
-      <li><a href="#">Tagi</a></li>
-      <li><a href="#">Archiwa</a></li>
-      <li><a href="#">O mnie</a></li>
-      <li class="search">
-        <input type="search" placeholder="Wyszukaj...">
-        <button type="submit">Szukaj</button>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Farming Simulator 22</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#requirements">System Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tips">Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#community">Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <main class="content">
-    <h2>Witaj w Symulatorze Farmy 22!</h2>
-    <p>Symulator Farmy 22 to najnowsza odsłona popularnej serii gier symulacyjnych.</p>
-    <h3>Cechy</h3>
-    <ul>
-      <li>Nowe uprawy i maszyny</li>
-      <li>Ulepszona grafika i fizyka</li>
-      <li>Rozszerzone opcje multiplayer</li>
-      <li>Dynamiczne pory roku i pogoda</li>
-    </ul>
-    <h3>Wymagania systemowe</h3>
-    <ul>
-      <li>System operacyjny: Windows 10, MacOS 10.15, Ubuntu 20.04 lub SteamOS 3</li>
-      <li>Procesor: Intel Core i5-3330 lub AMD FX-8320 lub równoważny</li>
-      <li>Pamięć: 8 GB RAM</li>
-      <li>Karta graficzna: NVIDIA GeForce GTX 660 lub AMD Radeon R7 265 lub równoważna</li>
-      <li>Miejsce na dysku: 30 GB wolnego miejsca</li>
-    </ul>
-    <h3>Kup teraz</h3>
-    <p><a href="https://www.farming-simulator.com/buy-fs22.html" class="button">Kup teraz</a></p>
-    <img src="fs22.jpg" alt="Farming Simulator 22">
-  </main>
-  <footer class="footer">
-    <p>&copy; 2022 ZZZOO. Wszelkie prawa zastrzeżone.</p>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Welcome to Farming Simulator 22</h1>
+      <p class="lead">Your ultimate guide to mastering the art of farming</p>
+    </div>
+  </header>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Features</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/feature1.jpg" class="card-img-top" alt="Feature 1">
+            <div class="card-body">
+              <h5 class="card-title">New Crops</h5>
+              <p class="card-text">Explore new crops such as grapes, olives, and sorghum for diverse farming experiences.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/feature2.jpg" class="card-img-top" alt="Feature 2">
+            <div class="card-body">
+              <h5 class="card-title">Seasonal Cycles</h5>
+              <p class="card-text">Experience dynamic weather and seasons, affecting your farming strategies and schedules.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/images/feature3.jpg" class="card-img-top" alt="Feature 3">
+            <div class="card-body">
+              <h5 class="card-title">Enhanced Multiplayer</h5>
+              <p class="card-text">Join forces with friends in a more robust and engaging multiplayer environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="requirements" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">System Requirements</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Minimum Requirements</h4>
+          <ul>
+            <li>OS: Windows 10 64-bit</li>
+            <li>Processor: Intel Core i3-2100T @ 2.5GHz or AMD FX-4100 @3.6 GHz</li>
+            <li>Memory: 4 GB RAM</li>
+            <li>Graphics: Nvidia Geforce GTX 650, AMD Radeon HD 7770 graphics card or better (min 2GB VRAM, DX11 support)</li>
+            <li>Storage: 35 GB available space</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Recommended Requirements</h4>
+          <ul>
+            <li>OS: Windows 10 64-bit</li>
+            <li>Processor: Intel Core i5-3330 @ 3.0GHz or AMD FX-8320 @ 3.5 GHz or better</li>
+            <li>Memory: 8 GB RAM</li>
+            <li>Graphics: Nvidia Geforce GTX 660, AMD Radeon R9 270 or better (min 2GB VRAM, DX11 support)</li>
+            <li>Storage: 35 GB available space</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Tips for Success</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h4>Tip 1</h4>
+          <p>Always plan your crop rotations to maximize soil fertility and crop yields.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Tip 2</h4>
+          <p>Invest in efficient machinery early on to speed up your farming operations.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Tip 3</h4>
+          <p>Keep an eye on market prices to sell your produce at the best possible rates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Join the Community</h2>
+      <p class="text-center">Connect with other Farming Simulator 22 players and share your experiences.</p>
+      <div class="text-center mt-4">
+        <a href="https://www.reddit.com/r/farmingsimulator/" class="btn btn-primary me-2">Reddit</a>
+        <a href="https://discord.gg/farmingsimulator" class="btn btn-secondary">Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Farming Simulator 22. All Rights Reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
