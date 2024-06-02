@@ -9,17 +9,22 @@ title: Farming Simulator 22 Fan Site
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-theme-chirpy.css' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/img/favicons/site.webmanifest' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/assets/img/favicons/favicon.ico' | relative_url }}">
 </head>
 <body>
     <header>
         <h1>Welcome to the Farming Simulator 22 Fan Site</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/#features' | relative_url }}">Features</a></li>
+                <li><a href="{{ '/#gallery' | relative_url }}">Gallery</a></li>
+                <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -69,6 +74,7 @@ title: Farming Simulator 22 Fan Site
         <p>&copy; 2024 Farming Simulator 22 Fan Site. All rights reserved.</p>
     </footer>
 
-    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/dist/home.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/dist/app.min.js' | relative_url }}"></script>
 </body>
 </html>
